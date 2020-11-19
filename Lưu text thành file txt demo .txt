@@ -1,0 +1,22 @@
+ DialogResult save_yes_no = MessageBox.Show("Do you want to save the text ?", "Save", MessageBoxButtons.YesNo);
+                if (save_yes_no == DialogResult.Yes)
+                {
+                    SaveFileDialog file_save = new SaveFileDialog();
+                    if (file_save.ShowDialog() == DialogResult.OK)
+                    {
+                        //yes ???
+
+                        FileStream fParameter = new FileStream(file_save.FileName + ".txt", FileMode.Create, FileAccess.Write);
+                        StreamWriter m_WriterParameter = new StreamWriter(fParameter);
+                        m_WriterParameter.BaseStream.Seek(0, SeekOrigin.End);
+                        m_WriterParameter.Write(richTextBox1.Text);
+                        m_WriterParameter.Flush();
+                        m_WriterParameter.Close();
+                    }
+                }
+                else
+                {
+                    //no ???
+                    richTextBox1.Clear();
+
+                }

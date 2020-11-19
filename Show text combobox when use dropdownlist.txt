@@ -1,0 +1,6 @@
+ comboBox1.Items.Add("Công nghệ thông tin");
+            comboBox1.Items.Add("Hệ thống thông tin");
+            comboBox1.Items.Add("Khoa học dữ liệu");
+            comboBox1.Items.Add("Khoa học máy tính");
+            comboBox1.Items.Insert(0, "Kỹ thuật phần mềm");
+            comboBox1.SelectedIndex = 0;
