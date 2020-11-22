@@ -1,0 +1,15 @@
+ private void themmoi_Click(object sender, EventArgs e)
+        {
+            int STT=add.Items.Count+1;
+
+            string[] list_input = new string[6];
+            list_input[0] = "";
+            list_input[1] = STT.ToString();
+            list_input[2] = textBox1.Text;
+            list_input[3] = textBox2.Text;
+            list_input[4] = comboBox1.Text;
+            list_input[5] = textBox4.Text;
+            ListViewItem Add = new ListViewItem(list_input);
+            add.Items.Add(Add);
+            this.Close();
+        }
