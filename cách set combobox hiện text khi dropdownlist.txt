@@ -1,0 +1,2 @@
+ comboBox1.Items.Insert(0, "Kỹ thuật phần mềm");
+            comboBox1.SelectedIndex = 0;
